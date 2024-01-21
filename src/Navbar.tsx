@@ -1,6 +1,6 @@
 import React from 'react'
 import logos from './images/logos.png';
-import moon from './images/icon-moon.svg';
+import moon from './images/icon-moon.png';
 
 function Navbar() {
     return (
