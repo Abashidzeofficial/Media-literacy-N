@@ -12,13 +12,13 @@ function Navbar() {
                 </a>
                 <ul>
                     <li>
-                        <a href="Take action">Take action</a>
+                        <a href="Take action">მთავარი</a>
                     </li>
                     <li>
-                        <a href="News">News</a>
+                        <a href="News">სიახლეები</a>
                     </li>
                     <li>
-                        <a href="Resurse libery">Resurse libery</a>
+                        <a href="Resurse libery">მულტიმედია</a>
                     </li>
                 </ul>
                 <button className='them' >
