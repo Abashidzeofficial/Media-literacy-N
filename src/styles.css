@@ -161,3 +161,6 @@ body {
 .ltxt {
   font-size: 15px;
 }
+.foot {
+  display: flex;
+}
