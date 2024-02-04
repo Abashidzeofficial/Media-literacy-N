@@ -200,3 +200,17 @@ body {
   align-items: center;
   gap: 50px;
 }
+.news-image {
+  width: 400px;
+  border-radius: 80px;
+}
+.news-txt {
+  display: flex;
+  font-size: 15px;
+  width: 500px;
+}
+.news-line1 {
+  display: flex;
+  gap: 100px;
+  padding-top: 50px;
+}
