@@ -8,7 +8,7 @@ function action() {
             <div className='action-inside'>
 
                 <div className='action-two'>
-                    <img src={meeting} className='meeting-img' />
+                    <img src={training} className='meeting-img' />
                     <span className='meeting-txt'>
                         საინფორმაციო შეხვედრა გავმართეთ რელიგიური/ეთნიკური
                         უმცირესობის წარმომადგენელ ახალგაზრდებთან პროექტის „Media
@@ -34,7 +34,7 @@ function action() {
 
                 </div>
                 <div className='action-three'>
-                    <img src={training} className='training-img' />
+                    <img src={meeting} className='training-img' />
                     <span className='meeting-txt'>
                         დაბა ბაკურიანში ორგანიზებული იყო ტრეინინგ კურსი რელიგიური/ეთნიკური
                         ჯგუფის წარმომადგენელი ახალგაზრდებისთვის.

@@ -12,7 +12,7 @@ function Navbar() {
                 </a>
                 <ul>
                     <li>
-                        <a href="Take action">მთავარი</a>
+                        <a href="Take-action">მთავარი</a>
                     </li>
                     <li>
                         <a href="News">სიახლეები</a>
