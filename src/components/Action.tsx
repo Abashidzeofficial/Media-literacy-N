@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useRef, forwardRef, useImperativeHandle } from 'react';
 import meeting from "./image/meeting.jpg"
 import training from "./image/training.jpg"
 
+
+
 function action() {
+
+
     return (
+
         <div className='action-container'>
             <div className='action-inside'>
 
@@ -51,7 +56,9 @@ function action() {
                 </div>
             </div>
         </div>
+
+
     )
 }
 
-export default action
+export default action;

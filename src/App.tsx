@@ -1,5 +1,5 @@
 import "./styles.css"
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import Navbar from './Navbar'
 import Book from './components/Book'
 import Action from "./components/Action"
@@ -11,18 +11,25 @@ import meeting from "./images/meeting.jpg"
 
 
 
+
+
 function App() {
+
+  const ref = useRef(null);
+  const handleClick = () => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' })
+  }
 
   return (
     <div className="main-container">
-      <Navbar />
-
+      <Navbar handleClick={handleClick} />
       <Book />
-      <Action />
+      <Action ref={ref} />
       <News />
       <Resurse />
       <Foot />
     </div>
+
 
 
   )
