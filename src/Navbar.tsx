@@ -2,12 +2,11 @@ import React, { useRef, useState } from 'react'
 import logos from './images/logos.png';
 import moon from './images/icon-moon.png';
 import Action from './components/Action';
+import { Link } from 'react-router-dom';
 
-interface NavbarProps {
-    handleClick: () => void;
-}
 
-const Navbar: React.FC<NavbarProps> = ({ handleClick }) => {
+
+const Navbar: React.FC = () => {
 
 
     return (
@@ -20,7 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({ handleClick }) => {
                     </a>
                     <ul>
                         <li>
-                            <a href="Take-action" onClick={handleClick}>მთავარი</a>
+                            <Link to="/take-action">მთავარი</Link>
                         </li>
                         <li>
                             <a href="News">სიახლეები</a>

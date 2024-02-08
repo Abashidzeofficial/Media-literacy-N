@@ -8,23 +8,23 @@ import Resurse from "./components/Resurse"
 import Foot from "./components/Foot"
 import training from "./images/training.jpg"
 import meeting from "./images/meeting.jpg"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 
 
 
-function App() {
-
-  const ref = useRef(null);
-  const handleClick = () => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' })
-  }
+const App: React.FC = () => {
 
   return (
     <div className="main-container">
-      <Navbar handleClick={handleClick} />
+      <Routes>
+        <Route path="/take-action" element={<Action />} />
+        {/* Add other routes if needed */}
+      </Routes>
+      <Navbar />
       <Book />
-      <Action ref={ref} />
+      <Action />
       <News />
       <Resurse />
       <Foot />
