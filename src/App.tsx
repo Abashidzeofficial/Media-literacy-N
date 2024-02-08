@@ -8,20 +8,16 @@ import Resurse from "./components/Resurse"
 import Foot from "./components/Foot"
 import training from "./images/training.jpg"
 import meeting from "./images/meeting.jpg"
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 
 
 
-const App: React.FC = () => {
+
+function App() {
 
   return (
     <div className="main-container">
-      <Routes>
-        <Route path="/take-action" element={<Action />} />
-        {/* Add other routes if needed */}
-      </Routes>
       <Navbar />
       <Book />
       <Action />

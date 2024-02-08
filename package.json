@@ -1,5 +1,6 @@
 {
   "name": "media-literacy-n-app",
+  "homepage": "https://medialiteracynow.ge/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

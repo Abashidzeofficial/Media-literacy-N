@@ -2,11 +2,11 @@ import React, { useRef, useState } from 'react'
 import logos from './images/logos.png';
 import moon from './images/icon-moon.png';
 import Action from './components/Action';
-import { Link } from 'react-router-dom';
 
 
 
-const Navbar: React.FC = () => {
+
+function Navbar() {
 
 
     return (
@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
                     </a>
                     <ul>
                         <li>
-                            <Link to="/take-action">მთავარი</Link>
+                            <a href="Take-action" >მთავარი</a>
                         </li>
                         <li>
                             <a href="News">სიახლეები</a>

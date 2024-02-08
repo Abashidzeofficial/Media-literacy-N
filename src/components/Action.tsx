@@ -1,4 +1,4 @@
-import React, { useRef, forwardRef, useImperativeHandle } from 'react';
+import React, { useRef, } from 'react';
 import meeting from "./image/meeting.jpg"
 import training from "./image/training.jpg"
 
