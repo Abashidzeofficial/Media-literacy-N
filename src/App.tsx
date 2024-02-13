@@ -1,5 +1,6 @@
 import "./styles.css"
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, } from 'react'
+import { Routes, Route } from "react-router-dom"
 import Navbar from './Navbar'
 import Book from './components/Book'
 import Action from "./components/Action"
@@ -17,14 +18,21 @@ import meeting from "./images/meeting.jpg"
 function App() {
 
   return (
-    <div className="main-container">
-      <Navbar />
-      <Book />
-      <Action />
-      <News />
-      <Resurse />
-      <Foot />
-    </div>
+    <>
+      <div className="main-container">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Book />} />
+          <Route path="/" element={<Action />} />
+          <Route path="/" element={<News />} />
+          <Route path="/" element={<Resurse />} />
+          <Route path="/" element={<Foot />} />
+        </Routes>
+      </div>
+    </>
+
+
+
 
 
 

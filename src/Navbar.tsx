@@ -2,11 +2,25 @@ import React, { useRef, useState } from 'react'
 import logos from './images/logos.png';
 import moon from './images/icon-moon.png';
 import Action from './components/Action';
+import News from './components/News';
 
 
 
 
-function Navbar() {
+const Navbar: React.FC = () => {
+
+    const [activeTab, setActiveTab] = useState<string>('');
+
+    const handleTabClick = (tab: string) => {
+        setActiveTab(tab);
+    }
+    const renderContent = () => {
+        if (activeTab === 'News') {
+            return <News />;
+        }
+        return null; // Hide other components
+    };
+
 
 
     return (
@@ -19,7 +33,7 @@ function Navbar() {
                     </a>
                     <ul>
                         <li>
-                            <a href="Take-action" >მთავარი</a>
+                            <a href="#" onClick={() => handleTabClick('News')} >მთავარი</a>
                         </li>
                         <li>
                             <a href="News">სიახლეები</a>
@@ -35,6 +49,7 @@ function Navbar() {
                 </div>
 
             </nav>
+            {renderContent()}
 
         </div>
 
