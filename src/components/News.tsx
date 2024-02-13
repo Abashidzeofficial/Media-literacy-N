@@ -1,5 +1,6 @@
 import React from 'react'
 import news from './image/news.jpg'
+import { forwardRef } from 'react';
 
 function News() {
     return (
@@ -36,4 +37,4 @@ function News() {
     )
 }
 
-export default News;
+export default forwardRef(News);
