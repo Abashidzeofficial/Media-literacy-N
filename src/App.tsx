@@ -10,6 +10,8 @@ import meeting from "./images/meeting.jpg"
 import { useRef } from "react"
 import logos from './images/logos.png';
 import moon from './images/icon-moon.png';
+import face from './images/face.png';
+import insta from './images/insta.png';
 
 
 
@@ -35,6 +37,13 @@ function App() {
     setShowRes(true);
     setShowNews(false);
   };
+  const handleFaceClick = () => {
+    window.open('https://www.facebook.com/profile.php?id=100067001153111&mibextid=2JQ9oc', '_blank');
+  };
+
+  const handleInstaClick = () => {
+    window.open('https://www.instagram.com/ifcs7?igsh=MXd2MXZ4NThxNXh0Yg%3D%3D', '_blank');
+  };
 
   return (
     <div className="main-container">
@@ -55,8 +64,12 @@ function App() {
             </li>
           </ul>
           <button className='them' >
-            {/* <span className="moon-text">DARK</span> */}
-            <img src={moon} alt="moon" className="moon" />
+            <a href="#" onClick={handleFaceClick}>
+              <img src={face} alt="Facebook" className="moon" />
+            </a>
+            <a href="#" onClick={handleInstaClick}>
+              <img src={insta} alt="Instagram" className="moon" />
+            </a>
           </button>
         </div>
 
